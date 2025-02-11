@@ -40,9 +40,11 @@ export function leerSuperheroes (ruta) {
 
     console.log(superheroes);
     // Ordenar por nombre de superhéroe
-    superheroes.sort((a, b) => a.nombreSuperheroe.localeCompare(b.nombreSuperheroe));
-    
     //superheroes.sort((a, b) => a.nombreSuperheroe.localeCompare(b.nombreSuperheroe));
+    //superheroes.sort((a,b)=> a.edad.localeCompare(b.edad));
+    superheroes.sort((a, b) => b.edad - a.edad);
+
+    //superheroes.sort((a, b) => a.edad.localeCompare(b.edad));
     //superheroes.sort((a, b) => a.nombreSuperheroe.localeCompare(b.nombreSuperheroe));
     //a.nombreSuperheroes.localeCompare(b.nombreSuperheroes));
     return superheroes;

@@ -7,7 +7,7 @@ const app= express();
 const PORT= 3000;
 
 //Ruta básica
-app.get('/', (req, res) => {res.send('¡Hola, mundo!')});
+app.get('/', (req, res) => {res.send('¡Hola, Navegue hasta  !')});
 
 //Iniciar el servidor 
 app.listen(PORT, ()=>{

@@ -16,8 +16,8 @@ export function listarTareasCompletadasController(req, res) {
 // Controlador para crear una nueva tarea
 export function crearTareaController(req, res) {
     const {id, titulo, descripcion, completado} = req.body; 
-     crearTarea(id, titulo, descripcion, completado);
-    res.send(renderizarMensaje('Tarea creada con éxito'));
+    crearTarea(id, titulo, descripcion, completado);
+    res.send(renderizarMensaje("Tarea creada con éxito"));
 } 
 
 // Controlador para marcar una tarea como completada 

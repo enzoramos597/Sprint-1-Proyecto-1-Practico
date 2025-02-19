@@ -22,11 +22,16 @@ export function listarTareasCompletadas() {
 // Servicio para crear una nueva tarea
 export function crearTarea(id, titulo, descripcion, completado = false) {
     // Obtiene todas las tareas
+    //const tareas = tareaRepo.obtenerTodas();
     const tareas = tareaRepo.obtenerTodas();
+    
     // Crea una nueva instancia del modelo Tarea
     const nuevaTarea = new Tarea(id, titulo, descripcion, completado);
+    //const nuevaTarea = new Tarea(id, titulo, descripcion, completado);
     // Valida que la tarea tenga un título válido
+
     nuevaTarea.validar();
+    //nuevaTarea.validar();
     // Añade la nueva tarea a la lista de tareas
     tareas.push(nuevaTarea);
     // Guarda la lista actualizada de tareas en el archivo

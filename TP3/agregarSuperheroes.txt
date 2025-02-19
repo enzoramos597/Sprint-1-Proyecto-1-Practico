@@ -12,6 +12,19 @@
         "aliado": ["Hawkeye"],
         "enemigo": ["Taskmaster"]
     },
+    {
+    "id": 5,
+    
+    "nombreReal": "Bruce Banner",
+    "nombreSociedad": "Vigilante",
+    "edad": 40,
+    "planetaOrigen": "Tierra",
+    "debilidad": "Control emocional",
+    "poder": ["Fuerza bruta","Resistencia"],
+    "habilidadEspecial": "Regeneración rápida",
+    "aliado": ["Ironman"],
+    "enemigo": ["Loki"]
+  },
   {
     "id": 6,
     "nombreSuperheroe": "Captain America",
